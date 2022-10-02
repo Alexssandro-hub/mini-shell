@@ -31,7 +31,7 @@ void read_command (char command[], char* parameters[]) {
     if (count == 1) return;
     pch = strtok(line, "\n");
 
-    //parse the line into words
+    //analisar a linha em palavras
     while(pch != NULL){
         array[i++] = strdup(pch);
         pch = strtok(NULL, "\n");
